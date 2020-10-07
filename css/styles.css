@@ -12,6 +12,8 @@ html {
 
 body {
   background-color: black;
+  display: block;
+  position: relative;
 }
 
 h1, h2, h3, h4 {
@@ -199,24 +201,21 @@ button {
 
 .nav-mobile {
   display: inline-block;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 50%;
   height: 100vh;
   background-color: white;
-  z-index: 1;
+  z-index: 10;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 @media (min-width: 1279px) {
   .nav-mobile {
     display: none;
   }
-}
-
-.nav-mobile.hide {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
 }
 
 .nav-mobile.show {
