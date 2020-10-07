@@ -1,0 +1,79 @@
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+}
+
+h1,h2,h3,h4 {
+  margin: 1rem 0;
+  color: white;
+}
+
+p,a {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+button {
+  display: inline-block;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.button__icon {
+  font-size: 1.8rem;
+}
+.content {
+  max-width: 144rem;
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: 1279px) {
+    width: 95%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+
+.title {
+
+  @media (max-width: 767px) {
+    font-size: 3rem;
+  }
+
+  font-size: calc(30px + (40 - 30) * ((100vw - 767px) / (1279 - 768)));
+  
+
+  @media (min-width: 1279px) {
+    font-size: 4rem;
+  }
+
+}
+.sub-title {
+
+  @media (max-width: 767px) {
+    font-size: 2.5rem;
+  }
+
+  font-size: calc(25px + (30 - 25) * ((100vw - 767px) / (1279 - 768)));
+
+  @media (min-width: 1279px) {
+    font-size: 3rem;
+  }
+  
+}
+

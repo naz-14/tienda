@@ -1,0 +1,16 @@
+.header__icons-wrapper {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: flex-end;
+  
+  @media (min-width: 1279px) {
+    flex: 1 1 25%;
+  }
+}
+.header__mobil-menu {
+  display: inline-block;
+
+  @media (min-width: 1279px) {
+    display: none;
+  }
+}

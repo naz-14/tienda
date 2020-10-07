@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  padding: 2rem 1.5rem;
+}
+.btn--primary {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+}
+.btn--cart {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
